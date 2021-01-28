@@ -99,11 +99,8 @@ function genera_tabla() {
 
 async function main() {
 
-    // Use default settings
-    genera_tabla();
-    const qldb = require('amazon-qldb-driver-nodejs');
-    const loadJsonFile = require('load-json-file');
-    var pack_value;
+  
+    
     const driver = new qldb.QldbDriver("vehicle-registration");
     console.log("Bienvenido a la Demo de QLBD \n");
     //var continuar = 1;
@@ -129,7 +126,7 @@ async function main() {
     //var Listajosn = GetDocuments(driver,table);
     //crear_tabla(Listajosn)
 
-
+    genera_tabla();
     driver.close();
 }
 
